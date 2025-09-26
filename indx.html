@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños, Belén!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="birthday-container">
+        <h1 class="birthday-title">Feliz Cumpleaños Belén 🎉.</h1>
+        
+        <!-- Contenedor de la torta -->
+        <div class="cake-container">
+            <div class="cake">
+                <div class="plate"></div>
+                <div class="layer layer-bottom"></div>
+                <div class="layer layer-middle"></div>
+                <div class="layer layer-top"></div>
+                <div class="icing"></div>
+                <!-- Velas con el número 19 -->
+                <div class="candle candle-1" onclick="blowOutCandle(this)">
+                    <div class="flame"></div>
+                    <span class="candle-number">1</span>
+                </div>
+                <div class="candle candle-2" onclick="blowOutCandle(this)">
+                    <div class="flame"></div>
+                    <span class="candle-number">9</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Área donde aparecen y flotan los globos -->
+        <div id="balloons-container"></div>
+
+        <!-- Carta oculta inicialmente -->
+        <div id="birthday-card" class="card hidden">
+            <div class="card-content">
+                <h2>Feliz cumpleaños Nieves 🎂🎉🎁</h2>
+                <p>Te deseo 24 horas de celebración, aunque te mereces mucho más.</p>
+                <p>Espero que tu día esté lleno de risas, pastel y, por supuesto, regalos😝. Recuerda: que te quiero un montón ññ (aunque a veces eres un poco despistada)! 😜.</p>
+                <p>Espero q con estos 19 años que cumples, por fin crezcas pulguita.</p>
+                <p class="signature">Con cariño,<br>Javier</p>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="confetti-canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
